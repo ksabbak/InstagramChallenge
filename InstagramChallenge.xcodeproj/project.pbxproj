@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A8455851C67DC0F00113987 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8455841C67DC0F00113987 /* CameraViewController.swift */; };
 		E16E3FBC1C67877400D7ADC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E3FBB1C67877400D7ADC5 /* AppDelegate.swift */; };
 		E16E3FBE1C67877400D7ADC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E3FBD1C67877400D7ADC5 /* ViewController.swift */; };
 		E16E3FC11C67877400D7ADC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16E3FBF1C67877400D7ADC5 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A8455841C67DC0F00113987 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		E16E3FB81C67877400D7ADC5 /* InstagramChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16E3FBB1C67877400D7ADC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E16E3FBD1C67877400D7ADC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				E16E3FBB1C67877400D7ADC5 /* AppDelegate.swift */,
 				E16E3FBD1C67877400D7ADC5 /* ViewController.swift */,
 				E16E3FBF1C67877400D7ADC5 /* Main.storyboard */,
+				5A8455841C67DC0F00113987 /* CameraViewController.swift */,
 				E16E3FC51C67877400D7ADC5 /* Assets.xcassets */,
 				E16E3FC71C67877400D7ADC5 /* LaunchScreen.storyboard */,
 				E16E3FCA1C67877400D7ADC5 /* Info.plist */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E16E3FBE1C67877400D7ADC5 /* ViewController.swift in Sources */,
+				5A8455851C67DC0F00113987 /* CameraViewController.swift in Sources */,
 				E16E3FBC1C67877400D7ADC5 /* AppDelegate.swift in Sources */,
 				E16E3FC41C67877400D7ADC5 /* InstagramChallenge.xcdatamodeld in Sources */,
 			);
@@ -289,6 +293,7 @@
 				E16E3FCF1C67877400D7ADC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
