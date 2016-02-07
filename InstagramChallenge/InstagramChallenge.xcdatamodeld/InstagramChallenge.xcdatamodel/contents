@@ -1,4 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Comment" syncable="YES">
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="commenter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="comments" inverseEntity="User" syncable="YES"/>
+        <relationship name="photo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photo" inverseName="comment" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <entity name="FriendBriedge" syncable="YES">
+        <relationship name="befriender" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="friendsOf" inverseEntity="User" syncable="YES"/>
+        <relationship name="friend" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="friends" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Photo" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfLikes" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="comment" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="photo" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="likedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="User" inverseName="likedPhotos" inverseEntity="User" syncable="YES"/>
+        <relationship name="poster" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="photos" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <attribute name="avatar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="commenter" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FriendBriedge" inverseName="friend" inverseEntity="FriendBriedge" syncable="YES"/>
+        <relationship name="friendsOf" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FriendBriedge" inverseName="befriender" inverseEntity="FriendBriedge" syncable="YES"/>
+        <relationship name="likedPhotos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="likedBy" inverseEntity="Photo" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="poster" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Comment" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="FriendBriedge" positionX="-54" positionY="0" width="128" height="75"/>
+        <element name="Photo" positionX="-36" positionY="9" width="128" height="135"/>
+        <element name="User" positionX="-18" positionY="45" width="128" height="225"/>
+    </elements>
 </model>
