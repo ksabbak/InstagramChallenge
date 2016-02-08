@@ -15,6 +15,7 @@
 		A858BE161C68F5670057C8A4 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858BE151C68F5670057C8A4 /* ActivityViewController.swift */; };
 		A858BE181C68F7D00057C8A4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858BE171C68F7D00057C8A4 /* MapViewController.swift */; };
 		A858BE1A1C68F8240057C8A4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A858BE191C68F8240057C8A4 /* MapKit.framework */; };
+		BB3CF88E3D24A1CB355FA80D /* Pods_InstagramChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1346BEE1F3441259A93608 /* Pods_InstagramChallenge.framework */; };
 		E16E3FBC1C67877400D7ADC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16E3FBB1C67877400D7ADC5 /* AppDelegate.swift */; };
 		E16E3FC11C67877400D7ADC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16E3FBF1C67877400D7ADC5 /* Main.storyboard */; };
 		E16E3FC41C67877400D7ADC5 /* InstagramChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E16E3FC21C67877400D7ADC5 /* InstagramChallenge.xcdatamodeld */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		3B475ED373F3E2C17F60AFE0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5A8455841C67DC0F00113987 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		9B1346BEE1F3441259A93608 /* Pods_InstagramChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A858BDC41C67E3B80057C8A4 /* InstagramChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstagramChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		A858BE0F1C68F0260057C8A4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A858BE111C68F0FC0057C8A4 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 			files = (
 				A858BE1A1C68F8240057C8A4 /* MapKit.framework in Frameworks */,
 				88244C83FD7F590739C1CDEE /* libPods.a in Frameworks */,
+				BB3CF88E3D24A1CB355FA80D /* Pods_InstagramChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +111,7 @@
 			children = (
 				A858BE191C68F8240057C8A4 /* MapKit.framework */,
 				B27BF37126E9A689D8877920 /* libPods.a */,
+				9B1346BEE1F3441259A93608 /* Pods_InstagramChallenge.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,7 +214,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstagramChallenge/Pods-InstagramChallenge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BDB0F8B3F93B39F1F336F191 /* Copy Pods Resources */ = {
@@ -225,7 +229,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InstagramChallenge/Pods-InstagramChallenge-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
