@@ -3,6 +3,6 @@ use_frameworks!
 
 target 'InstagramChallenge' do
 
-    pod ‘Firebase’, ‘>= 2.3.2’
+    pod 'Firebase', '>= 2.3.2'
 
 end
